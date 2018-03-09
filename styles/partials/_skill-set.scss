@@ -1,0 +1,13 @@
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0.5fr));
+    margin: 0 auto;
+    text-align: center;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    i:hover {
+        color: #61BFAD;
+    }
+}
+

@@ -1,0 +1,65 @@
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 0 50px;
+    z-index: 100;
+}
+
+.nav-container {
+    min-width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+        display: inline-block;
+        a {
+            letter-spacing: 0.5rem;
+            position: relative;
+        }
+        a:hover {
+            color: #1e1e1e;
+        }
+        a:hover::after {
+            content: url(../assets/mint-line.png);
+            position: absolute;
+            bottom: -1.5rem;
+            left: 0;
+            right: 0;
+            margin: auto
+        }
+    }
+}
+
+.logo {
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    img {
+        background-color: white;
+    }
+}
+
+.header-image {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        text-transform: uppercase;
+        color: #696969;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 2rem;
+    }
+}

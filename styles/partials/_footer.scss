@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    background-image: url(../assets/footer-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    margin-top: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        li svg {
+        color: #61BFAD;
+        }
+    }
+    p {
+        border: 5px solid #61BFAD;
+        padding: 2rem;
+        margin: 2.5rem 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #1e1e1e;
+        font-size: 3.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+}

@@ -1,0 +1,57 @@
+@import "partials/_setup.scss";
+@import "partials/_fonts.scss";
+@import "partials/_header.scss";
+@import "partials/_portfolio.scss";
+@import "partials/_about.scss";
+@import "partials/_skill-set.scss";
+@import "partials/_footer.scss";
+
+
+//OVERARCHING STYLES
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    .wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+section {
+    margin-bottom: 130px;
+    padding-top: 20px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    &:hover, &:focus {
+        cursor: pointer;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+i {
+    color: #999999;
+}
+
+section .wrapper h2::before {
+    content: url(../assets/mint-line.png);
+    position: absolute;
+    left: -1rem;
+    top: -5rem;
+}

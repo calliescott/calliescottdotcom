@@ -1,0 +1,46 @@
+//FONTS
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+//HEADER FONTS
+.nav-container {
+    line-height: 3rem;
+}
+.nav-link {
+    color: #696969;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15rem;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 10px 18px 35px rgba(88,88,88,0.23);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+}
+
+//SECTION HEADERS 
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    text-align: left;
+    color: #373737;
+    margin-bottom: 100px;
+    position: relative;
+}
+

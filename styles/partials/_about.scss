@@ -1,0 +1,74 @@
+.about-grid-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(535px, 1fr));
+    grid-gap: 95px;
+    .about-image {
+        height: 500px;
+        border: 1px solid #999999;
+    }
+    .about-blurb {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        p {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            font-family: 'Lato', sans-serif;
+            color: #696969;
+            margin: 0;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.about-grid-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    .about-grid-bottom-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 400;
+        color: #373737;
+        margin-bottom: 100px;
+    }
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-gap: 1px;
+    width: 100%;
+    .about-more {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px dotted #999999;
+        .about-more-title {
+            font-family: 'Montserrat', sans-serif;
+            color: #61BFAD;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0;
+            text-align: center;
+        }
+        .about-more-blurb {
+           font-family: 'Montserrat', sans-serif;
+           color: #999999; 
+           text-align: center;
+           padding: 0 1rem;
+        }
+    }
+    .about-more:last-child {
+        border-right: none;
+    }
+}

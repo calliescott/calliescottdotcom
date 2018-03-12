@@ -18,26 +18,33 @@
                     <img src="../assets/logo-tiny.png" alt="">
                 </div>
                 <nav class="nav-container wrapper">
-                    <li >
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
+                    <label for="show-menu" class="show-menu">Menu</label>
+                    <input type="checkbox" id="show-menu" role="button">
+                    <ul class="ul-nav-main" id="menu">
+                        <li class="nav-link">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </nav><!-- ./nav-container wrapper ends -->
             </div>
         </div>
         <div class="header-image" id="home">
-            <img src="../assets/logo-huge.png" alt="">
+            <div class="title-img">
+                <img src="../assets/logo-huge.png" alt="">
+            </div>
+            
             <h3>Front End Web Developer</h3>
         </div>
     </header><!-- ./header-container ends -->
@@ -48,7 +55,10 @@
             <h2>My Work</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <div class="portfolio-text left">
+                    <div class="portfolio-image">
+                        <img src="../assets/mockup-desktop-computer-white.png" alt="">
+                    </div>
+                    <div class="portfolio-text">
                         <p class="portfolio-item-title">PSD Conversion - Responsive Design</p>
                         <p class="portfolio-item-subtitle">HTML - CSS3 - Sass - Responsive Design</p>
                         <p class="portfolio-blurb">Reproduced a fully responsive, pixel perfect multipage website from a PSD design.</p>
@@ -57,15 +67,12 @@
                             <a href=""><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <div class="portfolio-image">
-
-                    </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                    
+                        <img src="../assets/mockup-desktop-computer-white.png" alt="">
                     </div>
-                    <div class="portfolio-text right">
+                    <div class="portfolio-text">
                         <p class="portfolio-item-title">Javascript & jQuery Application</p>
                         <p class="portfolio-item-subtitle">Javascript // jQuery // CSS3 // HTML // Prepros</p>
                         <p class="portfolio-blurb">Designed and coded a web application that dynamically adds a6</p>
@@ -78,7 +85,10 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-text left">
+                    <div class="portfolio-image">
+                        <img src="../assets/mockup-desktop-computer-white.png" alt="">
+                    </div>
+                    <div class="portfolio-text">
                         <p class="portfolio-item-title">React & Firebase Application</p>
                         <p class="portfolio-item-subtitle">React // Firebase // Javascript/ES6 // Gulp // HTML5 // CSS3 // Sass</p>
                         <p class="portfolio-blurb">Designed and developed a React application that utilizes Firbase, allowing the user to create and log into their own account and log scuba diving trips.</p>
@@ -89,15 +99,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="portfolio-image">
-                
-                    </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                
+                        <img src="../assets/mockup-desktop-computer-white.png" alt="">
                     </div>
-                    <div class="portfolio-text right">
+                    <div class="portfolio-text">
                         <p class="portfolio-item-title">BrandIt</p>
                         <p class="portfolio-item-subtitle">React // Firebase // API // HTML // CSS // Gulp // Git & GitHub // Sass </p>
                         <p class="portfolio-blurb"></p>
@@ -110,7 +117,10 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-text left">
+                    <div class="portfolio-image">
+                        <img src="../assets/mockup-desktop-computer-white.png" alt="">
+                    </div>
+                    <div class="portfolio-text">
                         <p class="portfolio-item-title">Custom WordPress Blog Theme</p>
                         <p class="portfolio-item-subtitle">WordPress // PHP // Sass // Gulp // HTML // CSS</p>
                         <p class="portfolio-blurb"></p>
@@ -121,15 +131,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="portfolio-image">
-                
-                    </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                
+                        <img src="../assets/mockup-desktop-computer-white.png" alt="">
                     </div>
-                    <div class="portfolio-text right">
+                    <div class="portfolio-text">
                         <p class="portfolio-item-title">Group API Application</p>
                         <p class="portfolio-item-subtitle">Git & GitHub // Gulp // Javascript/ES6 // API // HTML // CSS // Sass</p>
                         <p class="portfolio-blurb">Utilized Google Maps Search Nearby API and Geolocation API to co-create an application that determines the user's
@@ -153,7 +160,7 @@
                 <div class="about-blurb">
                     <p>Hi there! I'm <span>Callie Scott</span>, a Toronto based Front End Web Developer fluent in Javascript, jQuery, React & PHP. I thrive
                     on building functional, accessible, and creatively designed applications with a focus on optimizing the user's experience.</p>
-                    <p>When I'm not coding I can normally be found running from spin class to pilates or </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sunt id blanditiis temporibus nesciunt ullam nihil illo culpa, libero minima minus maxime facere esse consectetur.</p>
                 </div>
                 <div class="about-image">
 
@@ -177,6 +184,10 @@
                     <div class="about-more">
                         <p class="about-more-title">Favourite Cuisine</p>
                         <p class="about-more-blurb">Thai</p>
+                    </div>
+                    <div class="about-more">
+                        <p class="about-more-title">My next focus</p>
+                        <p class="about-more-blurb">Learning Redux</p>
                     </div>
                 </div>
             </div>
@@ -204,7 +215,7 @@
     <footer class="footer-container" id="contact">
         <div class="wrapper">
             <h2>Ready to Chat?</h2>
-            <p>hello[at]calliescott[dot]com</p>
+            <a href="mailto:hello@calliescott.com"><p>hello[at]calliescott[dot]com</p></a>
             <ul class="social-links">
                 <li><a href="https://twitter.com/_calliescott"><i class="fab fa-twitter-square fa-3x"></i></a></i></li>
                 <li><a href="www.linkedin.com/in/calliescott"><i class="fab fa-linkedin fa-3x"></i></a></li>

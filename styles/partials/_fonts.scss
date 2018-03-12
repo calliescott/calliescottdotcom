@@ -16,6 +16,14 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 1.5rem;
+    @media (max-width: 945px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @media (max-width: 830px) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }
 
 h1 {
@@ -41,6 +49,6 @@ h2 {
     text-align: left;
     color: #373737;
     margin-bottom: 100px;
-    position: relative;
+    position: relative;    
 }
 

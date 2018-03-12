@@ -43,15 +43,17 @@
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1px;
     width: 100%;
+    background: grey;
     .about-more {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-right: 1px dotted #999999;
+        padding: 2rem;
+        background: #ffffff;
         .about-more-title {
             font-family: 'Montserrat', sans-serif;
             color: #61BFAD;
@@ -68,7 +70,7 @@
            padding: 0 1rem;
         }
     }
-    .about-more:last-child {
-        border-right: none;
-    }
+    // .about-more:last-child {
+    //     border-right: none;
+    // }
 }

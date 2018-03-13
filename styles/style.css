@@ -232,7 +232,7 @@ h2 {
     .nav-container li a:hover::after {
       content: url(../assets/mint-line.png);
       position: absolute;
-      bottom: -1.5rem;
+      bottom: -2.5rem;
       left: 0;
       right: 0;
       margin: auto; }
@@ -288,10 +288,22 @@ input[type=checkbox]:checked ~ #menu {
       -ms-flex-align: center;
           align-items: center; }
   .header-image .title-img {
-    width: calc(100% - 100px);
-    margin: 0 50px; }
+    width: calc(100% - 400px);
+    margin: 0 200px; }
     .header-image .title-img img {
       width: 100%; }
+    @media (max-width: 1000px) {
+      .header-image .title-img {
+        width: calc(100% - 300px);
+        margin: 0 150px; } }
+    @media (max-width: 750px) {
+      .header-image .title-img {
+        width: calc(100% - 200px);
+        margin: 0 100px; } }
+    @media (max-width: 500px) {
+      .header-image .title-img {
+        width: calc(100% - 100px);
+        margin: 0 50px; } }
     @media (max-width: 380px) {
       .header-image .title-img {
         width: calc(100% - 50px);
@@ -301,9 +313,18 @@ input[type=checkbox]:checked ~ #menu {
     color: #696969;
     font-family: 'Lato', sans-serif;
     letter-spacing: 2rem; }
+    @media (max-width: 1158px) {
+      .header-image h3 {
+        letter-spacing: 1.5rem; } }
+    @media (max-width: 925px) {
+      .header-image h3 {
+        letter-spacing: 1.2rem; } }
     @media (max-width: 840px) {
       .header-image h3 {
         letter-spacing: 1rem; } }
+    @media (max-width: 700px) {
+      .header-image h3 {
+        letter-spacing: 0.8rem; } }
     @media (max-width: 600px) {
       .header-image h3 {
         letter-spacing: 0.5rem; } }

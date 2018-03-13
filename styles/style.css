@@ -173,6 +173,9 @@ h2 {
   @media (max-width: 1169px) {
     h2 {
       margin-left: 5rem; } }
+  @media (max-width: 480px) {
+    h2 {
+      margin-lefT: 2rem; } }
 
 .header-top {
   display: -webkit-box;
@@ -453,6 +456,19 @@ p.portfolio-blurb {
     .about-grid-top {
       margin-left: 5rem;
       margin-right: 5rem; } }
+  @media (max-width: 800px) {
+    .about-grid-top {
+      grid-gap: 2rem; } }
+  @media (max-width: 480px) {
+    .about-grid-top {
+      margin-left: 2rem;
+      margin-right: 2rem; } }
+  @media (max-width: 480px) {
+    .about-grid-top .about-image {
+      width: 350px; } }
+  @media (max-width: 350px) {
+    .about-grid-top .about-image {
+      width: 250px; } }
   .about-grid-top .about-image img {
     width: 100%; }
   .about-grid-top .about-blurb {
@@ -466,6 +482,12 @@ p.portfolio-blurb {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+    @media (max-width: 480px) {
+      .about-grid-top .about-blurb {
+        width: 350px; } }
+    @media (max-width: 350px) {
+      .about-grid-top .about-blurb {
+        width: 250px; } }
     .about-grid-top .about-blurb p.about-title {
       font-family: 'Montserrat', sans-serif;
       color: #1e1e1e;

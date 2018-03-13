@@ -445,11 +445,28 @@ p.portfolio-blurb {
 
 .about-grid-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(535px, 1fr));
-  grid-gap: 95px; }
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 95px;
+  border: 1px solid red; }
+  @media (max-width: 800px) {
+    .about-grid-top {
+      grid-gap: 10px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .about-grid-top .about-image {
-    height: 500px;
-    border: 1px solid #999999; }
+    border: 1px solid green; }
+    @media (max-width: 1119px) {
+      .about-grid-top .about-image {
+        margin: 0 auto; } }
+    @media (max-width: 800px) {
+      .about-grid-top .about-image {
+        width: 400px; } }
+    @media (max-width: 410px) {
+      .about-grid-top .about-image {
+        width: 300px; } }
+    .about-grid-top .about-image img {
+      width: 100%; }
   .about-grid-top .about-blurb {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -463,13 +480,42 @@ p.portfolio-blurb {
             justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    border: 1px solid orange; }
+    @media (max-width: 1119px) {
+      .about-grid-top .about-blurb {
+        margin: 0 auto; } }
+    @media (max-width: 800px) {
+      .about-grid-top .about-blurb {
+        max-width: 400px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    @media (max-width: 410px) {
+      .about-grid-top .about-blurb {
+        max-width: 300px; } }
+    .about-grid-top .about-blurb p.about-title {
+      font-family: 'Montserrat', sans-serif;
+      color: #1e1e1e;
+      font-size: 2.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0; }
     .about-grid-top .about-blurb p {
       font-size: 1.6rem;
-      line-height: 2.5rem;
+      line-height: 3rem;
       font-family: 'Lato', sans-serif;
       color: #696969;
-      margin: 0; }
+      margin: 0 50px;
+      width: 100%;
+      padding-bottom: 15px; }
+      @media (max-width: 800px) {
+        .about-grid-top .about-blurb p {
+          max-width: 400px;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 0; } }
     .about-grid-top .about-blurb span {
       font-weight: bold; }
 

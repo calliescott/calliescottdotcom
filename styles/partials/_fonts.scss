@@ -50,5 +50,8 @@ h2 {
     color: #373737;
     margin-bottom: 100px;
     position: relative;    
+    @media (max-width: 1169px) {
+        margin-left: 5rem;
+    }
 }
 

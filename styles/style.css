@@ -140,7 +140,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1.5rem; }
+  padding: 0.5rem; }
   @media (max-width: 945px) {
     .nav-link {
       padding-left: 1rem;
@@ -346,15 +346,22 @@ input[type=checkbox]:checked ~ #menu {
               justify-content: center; } }
 
 .portfolio-item {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(535px, 1fr));
-  grid-gap: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media (max-width: 1170px) {
+  @media (max-width: 1000px) {
     .portfolio-item {
-      grid-gap: 50px; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   @media (max-width: 1119px) {
     .portfolio-item {
       -webkit-box-pack: center;
@@ -363,6 +370,18 @@ input[type=checkbox]:checked ~ #menu {
   @media (max-width: 575px) {
     .portfolio-item {
       grid-gap: 10px; } }
+
+.portfolio-item.right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 1000px) {
+    .portfolio-item.right {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .portfolio-image, .portfolio-text {
   max-width: 535px; }
@@ -379,16 +398,23 @@ input[type=checkbox]:checked ~ #menu {
       -ms-flex-pack: start;
           justify-content: flex-start;
   text-align: right; }
-  @media (max-width: 1119px) {
+  @media (max-width: 1000px) {
     .portfolio-text {
       text-align: center;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-top: 1.5rem; } }
   @media (max-width: 575px) {
     .portfolio-text {
       max-width: 400px; } }
   @media (max-width: 410px) {
     .portfolio-text {
       max-width: 300px; } }
+
+.right-text {
+  text-align: left; }
+  @media (max-width: 1000px) {
+    .right-text {
+      text-align: center; } }
 
 .portfolio-links {
   margin-top: 2rem; }
@@ -571,7 +597,7 @@ p.portfolio-blurb {
 
 .skills-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 0.5fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   margin: 0 auto;
   text-align: center;
   grid-gap: 4rem;
@@ -581,6 +607,9 @@ p.portfolio-blurb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 480px) {
+    .skills-icons {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); } }
   .skills-icons i:hover {
     color: #61BFAD; }
 
